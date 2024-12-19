@@ -4,10 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    Hi I'm test page
-    <a href="index.html">Go to home page</a>
+
   
+    <table border="3px solid black" >
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+     
+        <tbody>
+            <tr style="height: 100px">
+                <td>Alfreds Futterkiste</td>
+                <td style="background-color: gray;">Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma <br>lorem ipsum</td>
+                <td>Francisco Chang a very long name</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+        </tbody>
+        
+        <tfoot style="background-color: yellow;">
+            <tr>
+                <td colspan="3">Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Phone number</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>555-555-555</td>
+            <td>888-888-888</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>name: </th>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>55-333-222</td>
+        </tr>
+        <tr>
+            <td>222-555-777</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>University structure</caption>
+        <tr>
+            <th rowspan="2">Faculty: </th>
+            <td>Audit</td>
+            <td>It</td>
+            <td>Marketing</td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <th>Aud-Gr-1</th>
+                        <th colspan="2">Aud-Gr-2</th>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>24</td>
+                        <td>98</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>It-Gr-1</th>
+                        <th>It-Gr-2</th>
+                        <th>It-Gr-3</th>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>24</td>
+                        <td>98</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Mrkt-Gr-1</th>
+                        <th>Mrkt-Gr-2</th>
+                        <th>Mrkt-Gr-3</th>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>24</td>
+                        <td>98</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      
+    </table>
+
+    <table border="1px solid black">
+        <tr>
+            <td></td>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>WEEKEND</th>
+        </tr>
+        <tr>
+            <th>8:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="5"></td>
+        </tr>
+        <tr>
+            <th>9:00</th>
+            <td></td>
+            <td colspan="3" rowspan="3"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>10:00</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>11:00</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>12:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+    
+
 </body>
 </html>
