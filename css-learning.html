@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <style>
+        /* #header {
+            color: red;
+            font-size: 20px;
+        }
+
+
+        p.paragraph#par {
+            color: blue;
+            font-size: 16px;
+            border: 2px solid green;
+        }
+
+   
+       
+
+   
+
+        strong#strong-id  {
+            color: red;
+        }
+
+        p .my-span .another-span {
+            color: green;
+        }
+
+        .parent .child {
+            color: purple;
+            font-size: 16px;
+            border: 2px solid orange;
+        }
+
+        .parent > .child {
+            color: red;
+        }
+
+        div + p {
+            background-color: yellow;
+        }
+
+        div ~ p {
+            background-color: pink;
+        } */
+
+        div a.link:hover {
+            color: orangered;
+        }
+        /* div a:visited {
+            color: green;
+        } */
+        div a:link {
+            color: pink;
+        }
+        div a:active {
+            color: brown;
+        }
+
+        div p:first-child, 
+        div p:last-child,
+        div p:nth-child(4) {
+            color: blue;
+        }
+
+        div p:nth-child(5) strong {
+            color: red;
+        }
+    
+        #check:checked + div {
+            border: 5px solid red;
+        }
+
+        button:disabled {
+            background-color: purple;
+        }
+
+        p.par::first-line {
+            color: green;
+        }
+        p.par::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        p.par1::before {
+            content: "<";
+            color: blue;
+            display: block;
+            background-color: red;
+            padding: 10px;
+        }
+        p.par1::after {
+            content: ">";
+            color: orange;
+        }
+        
+        ul li::marker {
+            color: red;
+        }
+
+        p::selection {
+            color: blue;
+            background-color: yellow;
+        }
+
+        a[href="#1"] {
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" name="name" id="check">
+
+    <button >Button</button>
+
+    <ul>
+        <li>line</li>
+        <li>line</li>
+        <li>line</li>
+        <li>line</li>
+    </ul>
+
+    <div>
+        <a href="#1">Link</a>
+        <a class="link" href="#2">Link2</a>
+        <a href="#3">Link3</a>
+        <a href="#4">Link4</a>
+    </div>
+
+    <p class="par1">Hello world</p>
+
+
+    <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maiores dignissimos incidunt itaque tempora laboriosam? Consequatur ducimus id eum ea tenetur repudiandae, ipsum, necessitatibus rerum aliquid ullam sed, officia laboriosam.</p>
+    <div>
+        <p>Параграф 1 в div.</p>
+        <p>Параграф 2 в <strong>div</strong>.</p>
+        <p>Параграф 3 в div.</p>
+        <p>Параграф 4 в div.</p>
+        <p>Параграф 5 в <strong>div</strong>.</p>
+        <p>Параграф 6 в div.</p>
+        <p>Параграф 7 в <strong>div</strong>.</p>
+    </div>
+
+    <!-- <p>Параграф 4. не в div.</p>
+    <p>Параграф 5. не в div.</p>
+    <p>Параграф 5. не в div.</p>
+    <p>Параграф 5. не в div.</p>
+    <p>Параграф 5. не в div.</p>
+    <p>Параграф 5. не в div.</p> -->
+
+
+    <!-- <p class="paragraph" id="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam consequatur reiciendis, incidunt quod ab eum consequuntur possimus deserunt ducimus sunt quisquam, soluta voluptatem doloremque odio quibusdam sint nemo. Iusto?</p>
+    <p class="">Lorem <span class="my-span">ipsum <span class="another-span">another span </span></span> dolor sit amet consectetur adipisicing elit. Voluptatibus nam consequatur reiciendis, incidunt quod ab eum consequuntur possimus deserunt ducimus sunt quisquam, soluta voluptatem doloremque odio quibusdam sint nemo. Iusto?</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam consequatur reiciendis, incidunt quod ab eum consequuntur possimus deserunt ducimus sunt quisquam, soluta voluptatem doloremque odio quibusdam sint nemo. Iusto?</p> -->
+
+    <!-- <h1 id="header">Header</h1>
+    <h2 id="header-main">Header</h2> -->
+
+<!-- 
+        <div class="parent">
+            <div class="child">
+                Child
+            </div>
+            <div class="child">
+                Child
+            </div>
+            <div class="child">
+                Child
+            </div>
+        </div> -->
+
+
+          
+
+</body>
+</html>
