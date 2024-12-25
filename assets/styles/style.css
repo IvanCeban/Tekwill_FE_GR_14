@@ -1,0 +1,83 @@
+/* div {
+    background-color: gray;
+    background-image: url("../images/kitten.png") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+} */
+
+/* body {
+    background: url("../images/kitten.png") fixed center;
+} */
+
+
+/* p {
+    color: red;
+
+} */
+
+
+/* p::first-letter {
+    font-size: 2em;
+}
+p[text="hello"] {
+    /* color: rgba(0, 0, 0, 0.9) !important;
+    position: absolute; 
+    top: 40px;
+    left: 20px;
+}
+
+p[text="hello"] {
+    color: yellow;
+} 
+
+/* HSL = Hue Saturation Lightness */
+
+
+
+/* .par2.par {
+    color: cyan;
+} */
+/* p.par {
+    color: rgb(251, 0, 130);
+} */
+/* .par {
+    color: #0000ff;
+} */
+
+/* #par.par {
+    color: purple;
+} */
+/* 
+#par,
+#par2 {
+    color: hsla(120, 100%, 50%, 0.9);
+} */
+
+/* p {
+    color: orange !important;
+} */
+
+body {
+    color: blue;
+    font-size: 16px;
+    line-height: 1;
+}
+
+div {
+    color: red;
+    line-height: 1.5;
+}
+
+span {
+    border-left: 2px solid black;
+}
+p {
+    font-size: 30px;
+    color: green;
+}
+
+html {
+    color: purple;
+}
