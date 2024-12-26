@@ -7,6 +7,9 @@
     background-size: cover;
 } */
 
+body {
+    margin: 0;
+}
 /* body {
     background: url("../images/kitten.png") fixed center;
 } */
@@ -59,7 +62,7 @@ p[text="hello"] {
     color: orange !important;
 } */
 
-body {
+/* body {
     color: blue;
     font-size: 16px;
     line-height: 1;
@@ -80,4 +83,153 @@ p {
 
 html {
     color: purple;
+} */
+
+.nav-button {
+    width: 43px;
+    height: 44px;
+    background-image: url('../images/icons.png');
 }
+
+.home {
+    background-position: -3px 0;
+}
+.prev {
+    background-position: -47px 0;
+}
+.next {
+    background-position: -91px 0;
+}
+
+.absolute {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+
+.relative {
+    font-size: 20px;
+    height: 4em;
+    width: 4em;
+    background-color: pink;
+}
+
+.relative span {
+    font-size: 2em;
+}
+
+.article {
+    font-size: 5px;
+}
+
+.article h2 {
+    font-size: 2em;
+}
+
+.article p {
+    font-size: 1.5em;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* .remarticle {
+    font-size: 5rem;
+}
+.remarticle h2 {
+    font-size: 2rem;
+}
+
+.remarticle p {
+    font-size: 1.5rem;
+}
+
+.percent {
+    width: 200px;
+    height: 50px;
+    background-color: gray;
+}
+
+.percent .child {
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+.percent .child .grandchild{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+.vwblock {
+    width: 50vw;
+    height: 30vh;
+    background-color: blue;
+}
+.vwmin {
+    width: 50vmin;
+    height: 50px;
+    background-color: orange;
+}
+.vwmax {
+    width: 50vmax;
+    height: 50px;
+    background-color: purple;
+} */
+/* body {
+    counter-reset: section heading;
+} */
+/* 
+h2::before {
+    counter-increment: section;
+    content: " "counter(section) ": ";
+}
+h3::before {
+    counter-increment: heading;
+    content: " "counter(heading) ": ";
+} */
+
+
+.math {
+    width: calc(100vw - 50px);
+    height: calc(5rem / 2);
+    background-color: gray;
+}
+
+
+.min {
+    width: min(50vw, 100px);
+    height: calc(5rem / 2);
+    background-color: orangered;
+}
+.max {
+    width: max(50vw, 100px);
+    height: calc(5rem / 2);
+    background-color: green;
+}
+
+/* 
+Absolute
+
+cm
+mm
+in
+px
+pt (1/72 of an inch)
+pc (12 points)
+*/
+
+/* 
+Relative
+
+em (font-size of the element)
+rem (font-size of the root element)
+% (font-size of the parent element)
+vw (1% of the viewport width)
+vh (1% of the viewport height)
+vmin (1% of the viewport width or height, whichever is smaller)
+vmax (1% of the viewport width or height, whichever is larger)
+ex (x-height of the element's font)
+ch (width of the "0" (zero) character)
+*/
