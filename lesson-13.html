@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* div {
+            width: 100px;
+            height: 40px;
+            background-color: gray;
+            display: inline-block;
+        }
+
+        div a {
+            display: inherit;
+            width: 50px;
+            height: 30px;
+            background-color: red;
+        }
+
+        div:hover a {
+            display: inline;
+        } */
+
+        /* p {
+            background-color: blue;
+            width: 100px;
+            height: 50px;
+            visibility: hidden;
+        } */
+/* 
+        span {
+            background-color: green;
+            width: 100px;
+            height: 50px;
+            display: block;
+        } */
+
+
+        .granparent {
+            width: 200px;
+            height: 340px;
+            background-color: lightgray;
+           
+        }
+
+        .parent {
+            width: 100px;
+            height: 70px;
+            background-color: gray;
+            /* position: relative; */
+        }
+
+        .child {
+            width: 50px;
+            height: 30px;
+            background-color: red;
+            /* position: relative; */
+            /* /* position: static; */
+            /* position: absolute; */
+            position: fixed;
+            /* position: sticky;  */
+            right: 50px;
+            bottom: 50px;
+            /* right: 5px;
+            bottom: 30px; */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Block elements: -->
+    <div>
+        <a href="#">Link</a>
+    </div>
+    <span>Span</span>
+
+    <p>Paragraph</p>
+   
+    <div class="granparent">
+        <div class="parent">
+            <div class="child">
+                child
+            </div>
+        </div>
+    </div>
+
+    <!-- inline elements: -->
+    <span>Span</span>
+    <a href="#">Link</a>
+    <img src="./assets/images/cloud.svg" width="20" alt="">
+</body>
+</html>
