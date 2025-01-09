@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 16</title>
+
+    <style>
+        /* img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        } */
+
+        /* .mask {
+            mask-image: url('../assets/images/text.png');
+            mask-repeat: no-repeat;
+        }
+  
+        p {
+            font-size: 20px;
+            padding: 20px;
+            color: white;
+        }
+
+        .mask1 {
+            max-width: 600px;
+            height: 350px;
+            overflow-y: scroll;
+            background: url("../assets/images/landscape.jpg") no-repeat;
+            -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+            mask-repeat: no-repeat;
+        }
+   */
+
+   /* :root {
+        --my_color: gray;
+   }
+
+   body {
+         background-color: var(--my_color);
+   }
+
+   .var_block {
+        --my_color: orangered;
+        --my_new_color: rgba(0, 255, 255, 0.8);
+        --my_border: 0 0 10px var(--my_new_color);
+
+        margin-top: 20px;
+
+        background-color: var(--my_color);
+        color: var(--my_new_color);
+        border: 3px solid var(--my_new_color);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--my_border);
+   } */
+
+    /* .div1 {
+        width: 300px;
+        height: 100px;
+        border: 1px solid blue;
+    }
+
+    .div2 {
+        width: 300px;
+        height: 100px;    
+        padding: 50px;
+        border: 1px solid red;
+    } */
+
+    #grad1 {
+        height: 100px;
+        background-image: repeating-linear-gradient(red, yellow 25%, green 50%); /* Стандартный синтаксис (должен быть последним) */
+    }
+
+    #grad2 {
+        height: 100px;
+        background: red; /* Для браузеров, не поддерживающих градиенты */
+        background: linear-gradient(90deg, red, yellow, green, blue, green, yellow, red); /* Стандартный синтаксис (должен быть последним) */
+    }
+
+    #grad3 {
+        height: 100px;
+        background-image: linear-gradient(to right, rgba(255,0,0,0.2), rgba(255,0,0,0.81));
+    }
+    #grad4 {
+        height: 100px;
+       
+        background-image: linear-gradient(to bottom, red,orange,yellow,green,blue,indigo,violet);
+        }
+    #grad5 {
+        height: 100px;
+        background-image: radial-gradient(circle, red 5%, yellow 15%, green 60%); 
+    }
+    #grad6 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: conic-gradient(red, yellow, green, blue, black);
+
+  background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+    }
+    </style>
+</head>
+<body>
+    <!-- <img src="https://www.schoolsw3.com/css/paris.jpg" alt="Paris" width="600" height="400"> -->
+
+    <!-- <div class="mask">
+        <img src="../assets/images/landscape.jpg" alt="Landscape" width="400">
+    </div>
+
+
+    <div class="mask1">
+        <p>Чинкве-Терре - прибрежный район в Лигурии, на северо-западе Италии. Он расположен на западе провинции Специя и включает в себя пять деревень: Монтероссо-аль-Маре, Вернацца, Корнилья, Манарола и Риомаджоре.</p>
+        <p>Чинкве-Терре - прибрежный район в Лигурии, на северо-западе Италии. Он расположен на западе провинции Специя и включает в себя пять деревень: Монтероссо-аль-Маре, Вернацца, Корнилья, Манарола и Риомаджоре.</p>
+        <p>Чинкве-Терре - прибрежный район в Лигурии, на северо-западе Италии. Он расположен на западе провинции Специя и включает в себя пять деревень: Монтероссо-аль-Маре, Вернацца, Корнилья, Манарола и Риомаджоре.</p>
+        <p>Чинкве-Терре - прибрежный район в Лигурии, на северо-западе Италии. Он расположен на западе провинции Специя и включает в себя пять деревень: Монтероссо-аль-Маре, Вернацца, Корнилья, Манарола и Риомаджоре.</p>
+    </div>
+
+
+    <svg width="600" height="400">
+        <mask id="svgmask1">
+            <circle fill="#ffffff" cx="75" cy="75" r="75"></circle>
+            <circle fill="#ffffff" cx="80" cy="260" r="75"></circle>
+            <circle fill="#ffffff" cx="270" cy="160" r="75"></circle>
+          </mask>
+        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/landscape.jpg" mask="url(#svgmask1)"></image>
+      </svg> -->
+
+<!-- 
+      <div class="var_block ">
+        Hello world
+      </div> -->
+
+      <!-- <div class="div1">Это div меньше (ширина 300px и высота 100px).</div>
+        <br>
+        <div class="div2">Этот div больше (ширина также 300px и высота 100px).</div> -->
+
+
+  <div id="grad1" style="text-align:center;">0deg</div><br>
+  <div id="grad2" style="text-align:center;">90deg</div><br>
+  <div id="grad3" style="text-align:center;">180deg</div><br>
+  <div id="grad4" style="text-align:center;">-90deg</div>
+  <div id="grad5" style="text-align:center;">-90deg</div>
+  <div id="grad6" style="text-align:center;">-90deg</div>
+</body>
+</html>
