@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responisve</title>
+    <style>
+        .col-3 {width: 25%;}
+        .col-6 {width: 50%;}
+
+
+       
+        .myel {
+            color: orangered;
+        }
+        .myel2 {
+            color: orangered;
+        }
+        @media screen and (min-width: 576px)  {
+            
+            .myel {
+                color: green;
+            }
+            .myel2 {
+                color: green;
+            }
+        }
+    
+        
+        @media screen and (min-width: 576px) and (max-width: 1200px)  {
+            
+            .myel {
+                color: purple;
+            }
+            .myel2 {
+                color: purple;
+            }
+        }
+
+        @media only screen and (orientation: landscape) {
+            .myel {
+                color: blue;
+            }
+            .myel2 {
+                color: blue;
+            }
+        }
+      
+        .image {
+            width: 50vw;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            max-width: 318px;
+        }
+
+        video {
+            width: 100%;
+            max-width: fit-content;
+            height: auto;
+        }
+
+        .bg {
+            width: 70vw;
+            height: 200px;
+            background: url(../assets/images/kitten.png) no-repeat;
+            background-size: cover;
+        }
+
+        .card {
+            border: 2px solid green;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: lightgray;
+            width: 300px;
+
+            .card__description {
+                background-color: burlywood;
+
+                .description__text {
+                    color: blue;
+                }
+                .description__price {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .card__image--small {
+            width: 100px;
+        }
+        .card--sold {
+            background-color: red;
+        }
+        .card--inactive {
+            opacity: 0.5;
+        }
+        /* .card .card__description {
+            color: blue;
+        } */
+        /* .card__price {
+            font-weight: bold;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="col-3">
+        My element
+    </div> -->
+<!-- 
+    <div class="myel">
+        Hello world
+    </div>
+    <div class="myel2">
+        Hello world2
+    </div> -->
+
+    <!-- <div class="image">
+        <img src="https://cms.bbcearth.com//sites/default/files/factfiles/2024-07/horse1.jpg" alt="horse">
+    </div>
+    <div class="image2">
+        <img src="../assets/images/smallcat.jpeg" alt="horse">
+    </div>
+
+    <div class="bg">
+
+    </div>
+    <video controls>
+        <source src="../assets/video/mov_bbb.mp4" type="video/mp4">
+    </video> -->
+    <!-- <p>
+        phone: max-width: 575px
+        tablet: min-width: 576px
+        tablet: max-width: 768px
+        laptop: min-width: 769px
+        laptop: max-width: 992px
+        desktop: min-width: 993px
+        desktop: max-width: 1200px
+        large desktop: min-width: 1201px
+    </p> -->
+
+
+    <!-- BEM = Block__Element--Modifier -->
+
+ 
+    <div class="card card--sold card--inactive">
+        <img class="card__image" src="../assets/images/kitten-min.png" alt="kitten">
+        <div class="card__description description">
+            <p class="description__text">Very nice kitten</p>
+            <p class="description__price">100$</p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card__image" src="../assets/images/kitten-min.png" alt="kitten">
+        <div class="card__description description">
+            <p class="description__text">Very nice kitten</p>
+            <p class="description__price">100$</p>
+        </div>
+    </div>
+    <div class="card card--inactive">
+        <img class="card__image--small" src="../assets/images/puppy.jpeg" alt="kitten">
+        <div class="card__description description">
+            <p class="description__text">Very nice kitten</p>
+            <p class="description__price">100$</p>
+        </div>
+    </div>
+</body>
+</html>
