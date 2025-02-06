@@ -1,0 +1,29 @@
+- lesson 22
+- js
+- responsiveness&BEM
+- lesson 18
+- flex
+- gradients, variables, object fit
+- animation & fonts & icons
+- lesson 14
+- positioning & display
+- box-model
+- lesson 10
+- Merge pull request #3 from IvanCeban/css-selectors
+- lesson 10
+- css selectors
+- images, iframe, canvas, paths, video, audio
+- gitignore
+- gitignore2
+- gitignore
+- html
+- test
+- Merge branch 'main' into feature/index-creation :wq
+- stash learning
+- stash
+- Merge pull request #1 from IvanCeban/feature/index-creation
+- readme modified
+- index created
+- updated readme file
+- Update README.md
+- Initial commit
