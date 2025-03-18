@@ -1,0 +1,28 @@
+$primary-color: #ff00ff;
+
+
+@mixin button-styles {
+    --main-bg-color: brown;
+    color: $primary-color;
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.btn1 {
+  @include button-styles;
+  border-color: cyan;
+}
+
+.btn2 {
+  @include button-styles;
+
+  &--primary {
+    color: orange;
+  }
+}
+
+.btn3 {
+  @include button-styles;
+}
+
